@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "photon-ultra-board")(type "KiCad")(uri "${KIPRJMOD}/library/photon-ultra-board.kicad_sym")(options "")(descr ""))
+)
