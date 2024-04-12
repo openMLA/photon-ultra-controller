@@ -2,7 +2,7 @@
 
 The design is tested with a raspberry pi zero 2, but in principle any Raspberry pi will work. The hardware pins should all be shared, but some changes in raspberry Pi OS may break stuff for newer boards. 
 
-See [the schematic](schematic.pdf) for more info.
+See [the schematic](micromirror-board-controller.pdf) for more info.
 
 ### Assembly
 
