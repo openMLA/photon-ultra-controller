@@ -1,3 +1,7 @@
+> [!Important]
+>
+> This project is still under construction. Demo code and raspberry pi configurations need to be added. There is functional code, but it needs to be polished before being added here.
+
 # Photon Ultra DLP controller
 
 This repository contains PCB design files and code to control the UV projector found on the [Anycubic Photon Ultra](https://store.anycubic.com/products/photon-ultra). It also serves as a general example of how to send data to and control the [DCLP1438 DMD controller](https://www.ti.com/product/DLPC1438) through the parallel video interface.
@@ -17,6 +21,8 @@ If you are interested in learning more about the Photon Ultra, you can find more
 
 The PCB is designed around the standard 40-pin header present on the main Raspberry pi boards. Have a look at the required pins in the schematic to determine how to implement it for other boards.
 
+The PCB readme also contains a breakdown of parts and cost in the BOM. The total PCB + raspberry pi zero 2 cost is around **65 euro** including tax. Keep in mind that you would also need to get your hands on the PCB and UV projector found in an Anycubic Photon Ultra. When it was still being sold in stores, that printer went for around **300 euros**. Second-hand options would be attractive, as the projector is unlikely to be significantly worn or covered in layers of sticky resin.
+
 ![](media/pcb_3D_front.PNG)
 
 ### Context
@@ -25,8 +31,4 @@ This work was developed as part of the [openMLA project](https://github.com/open
 
 An earlier attempt at realising the right output format using a rp2040 was partially successful (image display was working), but memory limitations lead to the archiving of that project and the continuation with the current approach, The archived version [is still available](https://github.com/openMLA/photon-ultra-controller-rp2040) for those interested.
 
-## Acknowledgements
-
-The following KiCAD external libraries were used
-
-* [Raspberry pi pico by ncarandini](https://github.com/ncarandini/KiCad-RP-Pico)
+* https://github.com/ncarandini/KiCad-RP-Pico)

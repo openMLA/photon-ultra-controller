@@ -2,6 +2,7 @@
 .temp/*
 # affinity designer source files
 *.afdesign
+*.xlsx
 
 # FreeCAD
 *.FCstd1
