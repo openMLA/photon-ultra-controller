@@ -15444,7 +15444,7 @@
   (gr_text "12V" (at 102.2096 81.0768 90) (layer "B.SilkS" knockout) (tstamp 7a4326c0-6cd5-4b82-85bc-64f62685fbe6)
     (effects (font (size 1 1) (thickness 0.15)) (justify left bottom mirror))
   )
-  (gr_text "DCLP1438 Parallel" (at 142.3924 89.2048 90) (layer "F.SilkS" knockout) (tstamp 04a9c2c2-55fc-4b15-a933-4af324420aac)
+  (gr_text "DLPC1438 Parallel" (at 142.3924 89.2048 90) (layer "F.SilkS" knockout) (tstamp 04a9c2c2-55fc-4b15-a933-4af324420aac)
     (effects (font (size 0.7 0.7) (thickness 0.12) bold) (justify left bottom))
   )
   (gr_text "GP7" (at 144.9324 70.9676 45) (layer "F.SilkS") (tstamp 0fdcce53-a70c-4bdd-94db-4b278d29e4b4)
