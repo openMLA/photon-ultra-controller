@@ -17,6 +17,8 @@ If you are interested in learning more about the Photon Ultra, you can find more
 
 The PCB is designed around the standard 40-pin header present on the main Raspberry pi boards. Have a look at the required pins in the schematic to determine how to implement it for other boards.
 
+![](media/pcb_3D_front.PNG)
+
 ### Context
 
 This work was developed as part of the [openMLA project](https://github.com/openMLA), where the goal is to build an open hardware lithography system. Eventually an open hardware DLP controller board will be published as part of openMLA, but this represents an intermediate step. 

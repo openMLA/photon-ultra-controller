@@ -4,6 +4,10 @@ The design is tested with a raspberry pi zero 2, but in principle any Raspberry 
 
 See [the schematic](micromirror-board-controller.pdf) for more info.
 
+![](../media/pcb_3D_front.PNG)
+
+![](../media/pcb_3D_back.PNG)
+
 ### Assembly
 
 Most components are SMD, and the mouser links can be found in the basic [BOM](BOM.csv). In addition to the components of the BOM, you will also need some small wires to connect the USB data lines.
