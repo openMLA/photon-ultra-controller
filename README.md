@@ -17,6 +17,10 @@ If you are interested in learning more about the Photon Ultra, you can find more
 
 > If you have a projector using the DLPC1438 that uses an SPI interface (rather than parallel video), then you can check out the [PCB design and implementation for the Elegoo-mars-4 DLP](https://github.com/openMLA/elegoo-mars-4-dlp-controller) projector.
 
+### Issues
+
+* The Grayscale is a bit unpredictable in RGB565 mode. Expected to be fixed in moving to RGB888.
+
 ### PCB
 
 The PCB is designed around the standard 40-pin header present on the main Raspberry pi boards. Have a look at the required pins in the schematic to determine how to implement it for other boards.

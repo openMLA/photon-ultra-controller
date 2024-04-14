@@ -202,32 +202,3 @@ class DLPC1438:
 
         time.sleep(0.1) # TODO: optimise delay time; now this is just quick empirical test
 
-
-    def set_background(self, intensity, both_buffers=False):
-        '''
-        Send constant intensity values for all pixels to the inactive buffer.
-
-        Utility function that allows you to define a static background color to draw images
-        on top of with partial draws, or to for example initialise all the framebuffers
-        to black(0) or white (255).
-
-        If `both_buffers` is True, the value will be written to both buffers. Will take approximately
-        twice as long to complete.
-        '''
-
-        assert isinstance(intensity, int), "background intensity value must be an 8-bit integer"
-        assert 0 <= intensity < 256, "Intensity must be [0, 255]"
-
-        print(f"> Setting all pixels in current SPI buffer to intensity:{intensity}")
- 
-        # yes, np.transpose(np.ones(y,x)) transfers faster than np.onex(x,y)
-        # I agree it feels a bit silly
-        pxldata = np.transpose((np.ones((1440, 2560))*int(intensity)).astype(np.uint8))
-        print(f"background image dimensions: {pxldata.shape}")
-
-        self.split_spi_transmission(0, 0, pxldata)  
-
-        # if you want to set the intensity to both buffers
-        if both_buffers:
-            self.swap_buffer()
-            self.set_background(intensity, False)
