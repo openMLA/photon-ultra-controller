@@ -1,6 +1,6 @@
 > [!Important]
 >
-> This project is still under construction. Demo code and raspberry pi configurations need to be added. There is functional code, but it needs to be polished before being added here.
+> This project is still under construction. Raspberry pi configuration settings need to be added. There is functional code, but it needs to be polished before being added here. The PCB design needs to be built and checked; an old prototype with similar wiring is known to work; but I need to make sure this one works 100%. 
 
 # Photon Ultra DLP controller
 
@@ -34,5 +34,3 @@ The PCB readme also contains a breakdown of parts and cost in the BOM. The total
 This work was developed as part of the [openMLA project](https://github.com/openMLA), where the goal is to build an open hardware lithography system. Eventually an open hardware DLP controller board will be published as part of openMLA, but this represents an intermediate step. 
 
 An earlier attempt at realising the right output format using a rp2040 was partially successful (image display was working), but memory limitations lead to the archiving of that project and the continuation with the current approach, The archived version [is still available](https://github.com/openMLA/photon-ultra-controller-rp2040) for those interested.
-
-* https://github.com/ncarandini/KiCad-RP-Pico)
