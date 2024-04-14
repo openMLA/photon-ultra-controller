@@ -4,6 +4,9 @@
 *.afdesign
 *.xlsx
 
+# Python
+*.pyc
+
 # FreeCAD
 *.FCstd1
 
