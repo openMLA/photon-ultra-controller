@@ -1,12 +1,12 @@
 > [!Important]
 >
-> This project is still under construction. Raspberry pi configuration settings need to be added. There is functional code, but it needs to be polished before being added here. The PCB design needs to be built and checked; an old prototype with similar wiring is known to work; but I need to make sure this one works 100%. 
+> This project is still under construction. Raspberry pi configuration settings need to be added.  The PCB design needs a fix for the current pinout. All small fixes.
 
 # Photon Ultra DLP controller
 
 This repository contains PCB design files and code to control the UV projector found on the [Anycubic Photon Ultra](https://store.anycubic.com/products/photon-ultra). It also serves as a general example of how to send data to and control the [DCLP1438 DMD controller](https://www.ti.com/product/DLPC1438) through the parallel video interface.
 
-The replacement board allows users to generate the signals required for the *DLP controller board* (designed by eViewTek) & DMD that comes with the photon ultra. It does not capture the full functionality of the Anycubic mainboard as it does not control the interface LCD, control the mechanics (stepper motor) or run any resin 3D printer slicer software. It **only** controls the DLP projector with an arbitrary 8-bit 1280x720 image. Exposure time can be set per image. It is also possible to play video on the projector, if that is something you have a use for.
+The replacement board allows users to generate the signals required for the *DLP controller board* (designed by eViewTek) & DMD that comes with the photon ultra. It does not capture the full functionality of the Anycubic mainboard as it does not control the interface LCD, control the mechanics (stepper motor) or run any resin 3D printer slicer software. It **only** controls the DLP projector with an arbitrary 8-bit 1280x720 image. Exposure time can be set per image. It is also possible to play video on the projector, if that is something you have a use for. Video has been tested up to 30Hz, but should work up to 60Hz.
 
 This project might be of interest to you if you **own a photon ultra** and are interested in either
 
@@ -16,10 +16,6 @@ This project might be of interest to you if you **own a photon ultra** and are i
 If you are interested in learning more about the Photon Ultra, you can find more information on [this photon ultra teardown blog post](https://nemoandrea.github.io/blog/Anycubic_DLP_teardown/). More images are available on request.
 
 > If you have a projector using the DLPC1438 that uses an SPI interface (rather than parallel video), then you can check out the [PCB design and implementation for the Elegoo-mars-4 DLP](https://github.com/openMLA/elegoo-mars-4-dlp-controller) projector.
-
-### Issues
-
-* The Grayscale is a bit unpredictable in RGB565 mode. Expected to be fixed in moving to RGB888.
 
 ### PCB
 
