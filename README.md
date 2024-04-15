@@ -1,6 +1,6 @@
 > [!Important]
 >
-> This project is still under construction. Raspberry pi configuration settings need to be added.  The PCB design needs a fix for the current pinout. All small fixes.
+> This project is still under construction. The PCB design needs a fix for the current pinout. Shouldn't take much time.
 
 # Photon Ultra DLP controller
 
@@ -21,7 +21,9 @@ If you are interested in learning more about the Photon Ultra, you can find more
 
 The PCB is designed around the standard 40-pin header present on the main Raspberry pi boards. Have a look at the required pins in the schematic to determine how to implement it for other boards.
 
-The PCB readme also contains a breakdown of parts and cost in the BOM. The total PCB + raspberry pi zero 2 cost is around **65 euro** including tax. Keep in mind that you would also need to get your hands on the PCB and UV projector found in an Anycubic Photon Ultra. When it was still being sold in stores, that printer went for around **300 euros**. Second-hand options would be attractive, as the projector is unlikely to be significantly worn or covered in layers of sticky resin.
+The PCB readme also contains a breakdown of parts and cost in the BOM. The total PCB + raspberry pi zero 2 cost is around **65 euro** including tax. 
+
+Keep in mind that you would also need to get your hands on the PCB and UV projector found in an Anycubic Photon Ultra. When it was still being sold in stores, that printer went for around **300 euros**. Second-hand options would be attractive, as the projector is unlikely to be significantly worn or covered in layers of sticky resin. Alternatively you can try contacting eViewTek and source the optical engine and driver board directly.
 
 ![](media/pcb_3D_front.PNG)
 
