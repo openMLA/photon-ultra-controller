@@ -1,6 +1,6 @@
 > [!Important]
 >
-> This project is still under construction. The PCB design needs a fix for the current pinout. Shouldn't take much time.
+> Project is complete, but PCB needs to fabbed and tested. Functionality of approach has been tested with another PCB. I am fairly confident it will work, but definitive confirmation of PCB correctness is a few weeks out.
 
 # Photon Ultra DLP controller
 
