@@ -1,12 +1,8 @@
-> [!Important]
->
-> Project is complete, but PCB needs to fabbed and tested. Functionality of approach has been tested with another PCB. I am fairly confident it will work, but definitive confirmation of PCB correctness is a few weeks out.
-
 # Photon Ultra DLP controller
 
 This repository contains PCB design files and code to control the UV projector found on the [Anycubic Photon Ultra](https://store.anycubic.com/products/photon-ultra). It also serves as a general example of how to send data to and control the [DCLP1438 DMD controller](https://www.ti.com/product/DLPC1438) through the parallel video interface.
 
-The replacement board allows users to generate the signals required for the *DLP controller board* (designed by eViewTek) & DMD that comes with the photon ultra. It does not capture the full functionality of the Anycubic mainboard as it does not control the interface LCD, control the mechanics (stepper motor) or run any resin 3D printer slicer software. It **only** controls the DLP projector with an arbitrary 8-bit 1280x720 image. Exposure time can be set per image. It is also possible to play video on the projector, if that is something you have a use for. Video has been tested up to 30Hz, but should work up to 60Hz.
+The replacement board allows users to generate the signals required for the *DLP controller board* (designed by eViewTek) & DMD that comes with the photon ultra. It does not capture the full functionality of the Anycubic mainboard as it does not control the interface LCD, control the mechanics (stepper motor) or run any resin 3D printer slicer software. It **only** controls the DLP projector with an arbitrary 8-bit 1280x720 image. Exposure time can be set per image. It is also possible to play video on the projector, if that is something you have a use for. [Video has been tested up to 30Hz](https://github.com/openMLA/photon-ultra-controller/issues/1#issuecomment-2057936067), but should work up to 60Hz.
 
 This project might be of interest to you if you **own a photon ultra** and are interested in either
 
@@ -26,6 +22,19 @@ The PCB readme also contains a breakdown of parts and cost in the BOM. The total
 Keep in mind that you would also need to get your hands on the PCB and UV projector found in an Anycubic Photon Ultra. When it was still being sold in stores, that printer went for around **300 euros**. Second-hand options would be attractive, as the projector is unlikely to be significantly worn or covered in layers of sticky resin. Alternatively you can try contacting eViewTek and source the optical engine and driver board directly.
 
 ![](media/pcb_3D_front.PNG)
+
+The PCB has been assembled and verified. Evaluated functionality:
+
+* Powering a Raspberry Pi Zero 2
+* Powering the eViewTek board
+* software i2c communication (with DLPC1438)
+* video display via the parallel interface on the DMD
+* Status LED (not currently used in code, but they light up)
+
+Not tested:
+
+* The extra GPIO pins on top (including SPI)
+* Stemma QT connection
 
 ### Context
 
