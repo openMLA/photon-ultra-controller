@@ -3,6 +3,7 @@
 # affinity designer source files
 *.afdesign
 *.xlsx
+enclosure/.*
 
 # Python
 *.pyc
